@@ -16,10 +16,10 @@ const userSchema = new mongoose.Schema({
     required: true,
   },
   firstName: {
-    type: string,
+    type: String,
   },
   lastName: {
-    type: string,
+    type: String,
   },
   creditBalance: {
     type: Number,
@@ -27,7 +27,7 @@ const userSchema = new mongoose.Schema({
   },
 });
 
-// model aban liya idhar 
-const userModel = mongoose.models.user || mongoose.model('user',userSchema);
+// model aban liya idhar
+const userModel = mongoose.models.user || mongoose.model("user", userSchema);
 
 export default userModel;
